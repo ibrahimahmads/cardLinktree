@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #a8d8ea, #ffd3b6);
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.profile-item {
+  margin: 20px;
+}
+
+.profile-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-item h3 {
+  margin-top: 10px;
+}
+
+.profile-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.profile-item ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.profile-item ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-item ul li a svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.card.profile {
+  width: 300px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card.profile .card-img-top {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: -75px;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card.profile .card-body {
+  padding: 20px;
+}
+
+.card.profile .card-title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card.profile ul.list-unstyled {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.card.profile ul.list-unstyled li {
+  margin: 5px;
+  padding: 5px;
+}
+
+.card.profile ul.list-unstyled li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.card.profile ul.list-unstyled li a svg.icon {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}

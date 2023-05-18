@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profil Sosial Media</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card profile">
+        <div class="profile-item">
+          <img src="img/profil.jpg" alt="Foto Profil 1" />
+          <h3 class="nama">Ibrahim Ahmad</h3>
+          <ul>
+            <li class="li-kanan">
+              <a
+                href="https://ibrahimahmads.github.io/?fbclid=PAAaZX2BvAKtWn0nW88fBRhjavGwhqZovLLSkSWbxxD0T6Grs_NqxXTwdIfDg"
+                ><i data-feather="globe"></i>My Portfolio Website</a
+              >
+            </li>
+            <li class="li-kiri">
+              <a href="https://www.facebook.com/ahmad.kaka.1656"
+                ><i data-feather="facebook"></i>Facebook</a
+              >
+            </li>
+            <li class="li-kanan">
+              <a
+                href="https://instagram.com/ibrahim.ahmd_?igshid=OTk0YzhjMDVlZA=="
+                ><i data-feather="instagram"></i>Instagram</a
+              >
+            </li>
+            <li class="li-kiri">
+              <a href="https://youtube.com/@ibrahimahmad5374"
+                ><svg
+                  class="icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M21.9 7.73a2.76 2.76 0 00-1.95-1.95C18.85 5.63 12 5.63 12 5.63s-6.85 0-7.95.15A2.76 2.76 0 002.1 7.73C1.95 8.83 1.95 12 1.95 12s0 3.17.15 4.27a2.76 2.76 0 001.95 1.95C5.15 18.37 12 18.37 12 18.37s6.85 0 7.95-.15a2.76 2.76 0 001.95-1.95c.15-1.1.15-4.27.15-4.27s0-3.17-.15-4.27zm-9.9 6.27V9.27l5.58 2.87-5.58 2.86z"
+                  ></path></svg
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from(".nama", { duration: 3, text: "" });
+      gsap.from(".li-kanan", {
+        duration: 1.2,
+        x: -100,
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".li-kiri", {
+        duration: 1.2,
+        x: 100,
+        opacity: 0,
+        ease: "bounce",
+      });
+    </script>
+  </body>
+</html>
